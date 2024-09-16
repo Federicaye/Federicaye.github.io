@@ -11,7 +11,7 @@ async function populate() {
       const request = new Request(requestURL);
       const response = await fetch(request);
       const projects = await response.json();
-      console.log('ciao');
+      console.log('projects');
     }
 
 window.addEventListener('DOMContentLoaded', () => {
