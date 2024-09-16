@@ -1,8 +1,24 @@
 body {
-    box-sizing: border-box;
+    box-sizing: content-box;
+    margin: 0px;
+    background-color: #ECE5FA;
 }
 
 .container {
     width: 1300px;
     margin: 0 auto;
+}
+
+.card {
+   
+    background-color:#DAD1EB;
+    color: aliceblue;
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 1px 1px  #C2B8D4;
+    transition: box-shadow 2s;
+}
+
+.card:hover {
+    box-shadow: 10px 10px  #C2B8D4;
 }

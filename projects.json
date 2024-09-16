@@ -3,10 +3,16 @@
         {
            "name": "Travel-app",
            "technologies" : ["html", "php", "css"],
-           "type": "full-stack"
+           "type": "full-stack",
+           "img": ""
         }, 
         {
-            "name": "Travel-app",
+            "name": "Travel-app2",
+            "technologies" : ["html", "php", "css"],
+            "type": "full-stack"
+        },
+        {
+            "name": "Travel-app5",
             "technologies" : ["html", "php", "css"],
             "type": "full-stack"
         }

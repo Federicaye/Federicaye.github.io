@@ -1,19 +1,27 @@
-let ciaoButton=document.getElementById('ciaoButton');
+let result = {};
+let container = document.querySelector('.container');
+async function populate() {
+  const requestURL = "projects.json";
+  const request = new Request(requestURL);
+  const response = await fetch(request);
+  result = await response.json();
+  console.log(result);
+  result.projects.forEach(element => {
+    let p = document.createElement('p');
+    p.innerText = element["name"];
+    container.appendChild(p);
+  }); 
+}
+
+ 
+
+let ciaoButton = document.getElementById('ciaoButton');
 ciaoButton.addEventListener('click', () => {
-let p = document.createElement('p');
-p.innerText='ciao';
-document.body.appendChild(p);
-console.log('ciao');
+  let p = document.createElement('p');
+  p.innerText = "element";
+  document.body.appendChild(p);
 })
 
-async function populate() {
-    const requestURL ="projects.json";
-      const request = new Request(requestURL);
-      const response = await fetch(request);
-      const projects = await response.json();
-      console.log(projects);
-    }
-
 window.addEventListener('DOMContentLoaded', () => {
-    populate();
+  populate();
 }); 
