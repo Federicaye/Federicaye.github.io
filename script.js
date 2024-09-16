@@ -13,14 +13,6 @@ async function populate() {
   }); 
 }
 
- 
-
-let ciaoButton = document.getElementById('ciaoButton');
-ciaoButton.addEventListener('click', () => {
-  let p = document.createElement('p');
-  p.innerText = "element";
-  document.body.appendChild(p);
-})
 
 window.addEventListener('DOMContentLoaded', () => {
   populate();

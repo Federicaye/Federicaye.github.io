@@ -1,24 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
 body {
     box-sizing: content-box;
     margin: 0px;
-    background-color: #ECE5FA;
+    background-color: #cdbce8;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.container {
-    width: 1300px;
-    margin: 0 auto;
+.navbar {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
 }
 
-.card {
-   
-    background-color:#DAD1EB;
+section {
+   background-color: #352c43;
     color: aliceblue;
-    width: 95%;
-    margin: 0 auto;
-    box-shadow: 1px 1px  #C2B8D4;
-    transition: box-shadow 2s;
+    height: 100vh;
+  
 }
 
-.card:hover {
-    box-shadow: 10px 10px  #C2B8D4;
+.project-section {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.description {
+    width: 30%;
+}
+
+.img-project {
+    margin-top: 30px;
+    width: 70%;
+    border-radius: 10px;
+    outline: 1px solid rgb(255, 255, 255);
+    outline-offset: 25px;
+}
+
+.img-project img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.img-project img:hover {
+    width: 100%;
 }
