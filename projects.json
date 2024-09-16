@@ -1,0 +1,15 @@
+ {
+    "projects" : [ 
+        {
+           "name": "Travel-app",
+           "technologies" : ["html", "php", "css"],
+           "type": "full-stack"
+        }, 
+        {
+            "name": "Travel-app",
+            "technologies" : ["html", "php", "css"],
+            "type": "full-stack"
+        }
+
+    ]
+}
