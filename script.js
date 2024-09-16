@@ -7,11 +7,11 @@ console.log('ciao');
 })
 
 async function populate() {
-    const requestURL ="https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
+    const requestURL ="projects.json";
       const request = new Request(requestURL);
       const response = await fetch(request);
       const projects = await response.json();
-      console.log('projects');
+      console.log(projects);
     }
 
 window.addEventListener('DOMContentLoaded', () => {
