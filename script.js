@@ -22,23 +22,32 @@ async function populate() {
       </div>
       </section>`;
     projects.innerHTML += content;
-  }); 
+  });
 }
 
 var i = 0;
-var txt = 'Federica Gallo'; 
-var speed = 50; 
+var n = 0;
+var txt = 'Federica Gallo';
+var role = 'Full Stack Web Developer';
+var speed = 70;
 
 function typeWriter() {
-    if (i < txt.length) {
-        document.getElementById("myName").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
+  if (i < txt.length) {
+    document.getElementById("myName").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+  if (i == txt.length && n < role.length) {
+    document.getElementById("role").innerHTML += role.charAt(n);
+    n++;
+    setTimeout(typeWriter, speed);
+  }
+
 }
 
 
 window.addEventListener('DOMContentLoaded', () => {
-  typeWriter();
+   typeWriter(); 
+ 
   populate();
 }); 
