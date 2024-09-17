@@ -1,20 +1,31 @@
  {
     "projects" : [ 
         {
+           "id": "1",
            "name": "Travel-app",
            "technologies" : ["html", "php", "css"],
+           "description" : "New project",
            "type": "full-stack",
-           "img": ""
+           "img": "graphic-design-portfolio.jpg",
+           "bg-color": "#554348"
         }, 
         {
+            "id": "2",
             "name": "Travel-app2",
             "technologies" : ["html", "php", "css"],
-            "type": "full-stack"
+            "description" : "New project",
+            "type": "full-stack",
+            "img": "graphic-design-portfolio.jpg",
+            "bg-color": "#352c43"
         },
         {
+            "id": "3",
             "name": "Travel-app5",
             "technologies" : ["html", "php", "css"],
-            "type": "full-stack"
+            "description" : "New project",
+            "type": "full-stack",
+            "img": "graphic-design-portfolio.jpg",
+            "bg-color": "#555B6E"
         }
 
     ]

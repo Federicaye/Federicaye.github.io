@@ -1,15 +1,28 @@
 let result = {};
-let container = document.querySelector('.container');
+let content = ``;
+
 async function populate() {
+  let projects = document.getElementById("projects");
   const requestURL = "projects.json";
   const request = new Request(requestURL);
   const response = await fetch(request);
   result = await response.json();
   console.log(result);
   result.projects.forEach(element => {
-    let p = document.createElement('p');
-    p.innerText = element["name"];
-    container.appendChild(p);
+    content = `<section style="background-color: ${element["bg-color"]};">
+      <div class="project-section">
+        <div class="description">
+            <h2>${element["name"]}</h2>
+            <a href="project.html?id=${element["id"]}">vai</a>
+        </div>
+        <div class="img-project">
+            <img src="${element["img"]}" alt="">
+        </div>
+      </div>
+      </section>`;
+   /*  let p = document.createElement('p');
+    p.innerText = element["name"]; */
+    projects.innerHTML += content;
   }); 
 }
 
