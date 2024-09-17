@@ -13,11 +13,12 @@ async function populate() {
     let result = await response.json();
     let project = result.projects.filter((project) => project.id == id);
     console.log(project);
-    let content = `<p>${project[0]['name']}</p>
+    let content = `<div class="description"><p>${project[0]['name']}</p></div>
+    <div class="video-project">
     <iframe width="560" height="315" src="${project[0]['video']}" title="YouTube video player" title="YouTube video player" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>`;
+        allowfullscreen></iframe></div>`;
     projectContainer.innerHTML = content;
 }
 

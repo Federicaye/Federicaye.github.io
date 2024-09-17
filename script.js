@@ -17,7 +17,7 @@ async function populate() {
             <a href="project.html?id=${element["id"]}">vai</a>
         </div>
         <div class="img-project">
-            <img src="${element["img"]}" alt="">
+            <img src="${element["img"][0]}" alt="">
         </div>
       </div>
       </section>`;
@@ -25,7 +25,20 @@ async function populate() {
   }); 
 }
 
+var i = 0;
+var txt = 'Federica Gallo'; 
+var speed = 50; 
+
+function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("myName").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
 
 window.addEventListener('DOMContentLoaded', () => {
+  typeWriter();
   populate();
 }); 
