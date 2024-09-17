@@ -19,13 +19,14 @@ section {
    background-color: #352c43;
     color: aliceblue;
     height: 100vh;
-  
 }
 
 .project-section {
     width: 95%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
 }
 
@@ -34,15 +35,12 @@ section {
 }
 
 .img-project {
-    margin-top: 30px;
     width: 70%;
     border-radius: 10px;
-    border: 1px solid #cdbce8;;
-   
+    border: 1px solid #cdbce8;
 }
 
 .img-project img {
-  
     width: calc(100% - 40px);
     padding: 20px;
 }

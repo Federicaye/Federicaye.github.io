@@ -13,6 +13,7 @@ async function populate() {
       <div class="project-section">
         <div class="description">
             <h2>${element["name"]}</h2>
+            <p>${element["description"]}</p>
             <a href="project.html?id=${element["id"]}">vai</a>
         </div>
         <div class="img-project">
@@ -20,8 +21,6 @@ async function populate() {
         </div>
       </div>
       </section>`;
-   /*  let p = document.createElement('p');
-    p.innerText = element["name"]; */
     projects.innerHTML += content;
   }); 
 }
