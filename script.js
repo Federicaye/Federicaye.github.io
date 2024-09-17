@@ -1,4 +1,4 @@
-export let result = {};
+let result = {};
 let content = ``;
 
 async function populate() {

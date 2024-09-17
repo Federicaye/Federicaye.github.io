@@ -4,3 +4,23 @@ let urlParams = new URLSearchParams(query); /* The URLSearchParams interface def
 let id =  urlParams.get('id');
 console.log(urlParams);
 console.log(id);
+let projectContainer = document.querySelector(".project-section");
+
+async function populate() {
+    const requestURL = "projects.json";
+    const request = new Request(requestURL);
+    const response = await fetch(request);
+    let result = await response.json();
+    let project = result.projects.filter((project) => project.id == id);
+    console.log(project);
+    let content = `<p>${project[0]['name']}</p>
+    <iframe width="560" height="315" src="${project[0]['video']}" title="YouTube video player" title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>`;
+    projectContainer.innerHTML = content;
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    populate();
+  }); 
