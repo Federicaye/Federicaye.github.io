@@ -25,6 +25,7 @@ body {
     font-weight: 600;
     font-style: normal;
     margin: 0px;
+    color: #37205b;
 }
 
 .about-me h5 {
@@ -35,14 +36,15 @@ body {
     font-weight: 400;
     font-style: normal;
     font-style: oblique;
+    color: #4f2d84;
 }
 
 section {
-   background-color: #352c43;
     color: aliceblue;
     height: 100vh;
 }
 
+/* PROJECTS */
 
 .project-section {
     width: 95%;
@@ -51,10 +53,6 @@ section {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-}
-
-.description {
-    width: 30%;
 }
 
 .img-project,
@@ -73,9 +71,31 @@ section {
    opacity: 0.3;
 }
 
+/* DESCRIPTION */
+
+.description {
+    width: 30%;
+}
+
 .description a {
     color: red;
     text-decoration: none;
     border: 1px solid red;
     padding: 10px;
 }
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+    .project-section {
+        flex-direction: column;
+    }
+    .img-project {
+        width: 100%;
+    }
+    .description {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+

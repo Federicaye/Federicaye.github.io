@@ -9,7 +9,7 @@ async function populate() {
   result = await response.json();
   console.log(result);
   result.projects.forEach(element => {
-    content = `<section style="background-color: ${element["bg-color"]};">
+    content = `<section style="background-color: ${element["bg-color"]};" >
       <div class="project-section">
         <div class="description">
             <h2>${element["name"]}</h2>
@@ -25,29 +25,27 @@ async function populate() {
   });
 }
 
-var i = 0;
-var n = 0;
-var txt = 'Federica Gallo';
-var role = 'Full Stack Web Developer';
-var speed = 70;
+let i = 0;
+let n = 0;
+let fullName = 'Federica Gallo';
+let role = 'Full Stack Web Developer';
+let speed = 70;
 
 function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("myName").innerHTML += txt.charAt(i);
+  if (i < fullName.length) {
+    document.getElementById("myName").innerHTML += fullName.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
-  if (i == txt.length && n < role.length) {
+  if (i == fullName.length && n < role.length) {
     document.getElementById("role").innerHTML += role.charAt(n);
     n++;
     setTimeout(typeWriter, speed);
   }
 
-}
-
+} 
 
 window.addEventListener('DOMContentLoaded', () => {
    typeWriter(); 
- 
-  populate();
+   populate();
 }); 
