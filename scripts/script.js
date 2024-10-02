@@ -17,7 +17,7 @@ async function populate() {
             <a href="project.html?id=${element["id"]}">vai</a>
         </div>
         <div class="img-project">
-            <img src="${element["img"][0]}" alt="">
+            <img src="images/${element["img"][0]}" alt="">
         </div>
       </div>
       </section>`;

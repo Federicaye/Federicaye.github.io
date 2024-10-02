@@ -6,7 +6,7 @@
            "technologies" : ["html", "php", "css"],
            "description" : "New project",
            "type": "full-stack",
-           "img": ["graphic-design-portfolio.jpg"],
+           "img": ["PHP-logo.png"],
            "video": "https://www.youtube.com/embed/e44ccumIRPo?si=6MwKXijBuyv4-T6R",
            "bg-color": "#554348"
         }, 
