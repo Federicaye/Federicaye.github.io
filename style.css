@@ -13,6 +13,7 @@ body {
 nav {
     height: 30px;
 }
+
 .navbar {
     display: flex;
     list-style-type: none;
@@ -22,15 +23,17 @@ nav {
 .about-me {
     height: calc(100vh - 30px);
     display: flex;
+   /*  padding-left: 20px; */
+    width: 100%;
 }
 
 .profile {
-    width: 90%;
+    width: 100%;
 }
+
 .about-me h2 {
-    padding-top: 30px;
-    padding-left: 20px;
-    font-size: calc(40px + 5vw);
+    padding-top: 30px; 
+    font-size: calc(30px + 5vw);
     font-family: "Sen", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -40,9 +43,8 @@ nav {
 }
 
 .about-me h5 {
-    font-size: calc(20px + 5vw);
+    font-size: calc(10px + 5vw);
     margin-top: 0px;
-    padding-left: 20px;
     font-family: "Cormorant Garamond", serif;
     font-weight: 400;
     font-style: normal;
@@ -62,6 +64,7 @@ section {
 }
 
 .project-section {
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -107,8 +110,8 @@ section {
 
 @media (max-width: 768px) {
     .project-section {
-        flex-direction: column;
-        max-width: 768px;
+       flex-direction: column;
+       max-width: 768px; 
         width: 100%;
     }
     .img-project {
@@ -127,8 +130,11 @@ section {
         max-width: 100%;
     }
     .about-me h2 {
-        max-width: 700px;
+       max-width: 700px; 
+        font-size: 10px;
     }
-    
+    .links {
+        display: none;
+    }
 }
 
