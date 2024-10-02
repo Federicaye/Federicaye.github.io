@@ -45,7 +45,11 @@ function typeWriter() {
 
 } 
 
+
+
+
 window.addEventListener('DOMContentLoaded', () => {
    typeWriter(); 
    populate();
+   addSkills();
 }); 

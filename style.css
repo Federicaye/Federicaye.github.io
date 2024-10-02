@@ -10,12 +10,23 @@ body {
     font-style: normal;
 }
 
+nav {
+    height: 30px;
+}
 .navbar {
     display: flex;
     list-style-type: none;
     gap: 30px;
 }
 
+.about-me {
+    height: calc(100vh - 30px);
+    display: flex;
+}
+
+.profile {
+    width: 90%;
+}
 .about-me h2 {
     padding-top: 30px;
     padding-left: 20px;
@@ -44,6 +55,10 @@ section {
     height: 100vh;
 }
 
+.skill {
+    display: flex;
+}
+
 /* PROJECTS */
 
 .project-section {
@@ -58,8 +73,9 @@ section {
 .img-project,
 .video-project {
     width: 70%;
-    border-radius: 10px;
-    border: 1px solid #cdbce8;
+   /*   border-radius: 10px; 
+     border: 1px solid #cdbce8;  */
+   
 }
 
 .img-project img {
