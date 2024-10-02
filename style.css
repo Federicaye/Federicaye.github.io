@@ -89,16 +89,19 @@ section {
 @media (max-width: 768px) {
     .project-section {
         flex-direction: column;
+        max-width: 768px;
+        width: 100%;
     }
     .img-project {
         width: 100%;
     }
     .description {
+        max-width: 768px;
         width: 100%;
         margin-bottom: 30px;
     }
     .about-me {
-        width: 760px;
+        max-width: 768px;
     }
 }
 
