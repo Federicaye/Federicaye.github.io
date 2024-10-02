@@ -8,7 +8,7 @@
            "type": "full-stack",
            "img": ["PHP-logo.png"],
            "video": "https://www.youtube.com/embed/e44ccumIRPo?si=6MwKXijBuyv4-T6R",
-           "bg-color": "#554348"
+           "bg-color": "#61517B"
         }, 
         {
             "id": "2",
@@ -28,7 +28,7 @@
             "type": "full-stack",
             "img": ["graphic-design-portfolio.jpg"],
             "video": "https://www.youtube.com/embed/e44ccumIRPo?si=6MwKXijBuyv4-T6R",
-            "bg-color": "#555B6E"
+            "bg-color": "#1D1825"
         }
 
     ]
