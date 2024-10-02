@@ -9,7 +9,7 @@ async function populate() {
   result = await response.json();
   console.log(result);
   result.projects.forEach(element => {
-    content = `<section style="background-color: ${element["bg-color"]};" >
+    content = `<section style="background-color: ${element["bg-color"]};">
       <div class="project-section">
         <div class="description">
             <h2>${element["name"]}</h2>

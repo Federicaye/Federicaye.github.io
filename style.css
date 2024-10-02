@@ -19,7 +19,7 @@ body {
 .about-me h2 {
     padding-top: 30px;
     padding-left: 20px;
-    font-size: 100px;
+    font-size: calc(40px + 5vw);
     font-family: "Sen", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -29,7 +29,7 @@ body {
 }
 
 .about-me h5 {
-    font-size: 50px;
+    font-size: calc(20px + 5vw);
     margin-top: 0px;
     padding-left: 20px;
     font-family: "Cormorant Garamond", serif;
@@ -96,12 +96,15 @@ section {
         width: 100%;
     }
     .description {
-        max-width: 768px;
         width: 100%;
         margin-bottom: 30px;
     }
     .about-me {
-        max-width: 768px;
+        max-width: 100%;
     }
+    .about-me h2 {
+        max-width: 700px;
+    }
+    
 }
 
