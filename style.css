@@ -50,37 +50,34 @@ nav {
     color: #4f2d84;
 }
 
-section {
-    color: aliceblue;
-    height: 100vh;
-}
-
 .skill {
     display: flex;
 }
 
 /* PROJECTS */
 
+section {
+    color: aliceblue;
+    height: 100vh;
+}
+
 .project-section {
-    width: 95%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;  
 }
 
 .img-project,
 .video-project {
     width: 70%;
-   /*   border-radius: 10px; 
-     border: 1px solid #cdbce8;  */
    
 }
 
 .img-project img {
-    width: calc(100% - 40px);
-    padding: 20px;
+    height: calc(100vh - 90px);
+    object-fit: cover;
+    width:100%; 
 }
 
 .img-project img:hover {
@@ -91,6 +88,7 @@ section {
 
 .description {
     width: 30%;
+    padding-left: 35px;
 }
 
 .description a {
@@ -110,6 +108,11 @@ section {
     }
     .img-project {
         width: 100%;
+        height: calc(100vh / 2);
+    }
+    .img-project img {
+        height: 100%;
+        object-fit: cover;
     }
     .description {
         width: 100%;
